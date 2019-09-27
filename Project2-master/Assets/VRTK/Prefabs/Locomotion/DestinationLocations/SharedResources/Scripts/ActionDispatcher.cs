@@ -20,7 +20,7 @@
         /// </summary>
         /// <param name="data">The potential interaction of something entering a <see cref="DestinationLocation"/>.</param>
         [RequiresBehaviourState]
-        public void Enter(SurfaceData data)
+        public void Enter(UnityEngine.XR.WSA.SurfaceData data)
         {
             DestinationLocation location = GetLocation(data);
             if (location == null)
@@ -36,7 +36,7 @@
         /// </summary>
         /// <param name="data">The potential interaction of something exiting a <see cref="DestinationLocation"/>.</param>
         [RequiresBehaviourState]
-        public void Exit(SurfaceData data)
+        public void Exit(UnityEngine.XR.WSA.SurfaceData data)
         {
             DestinationLocation location = GetLocation(data);
             if (location == null)
@@ -52,7 +52,7 @@
         /// </summary>
         /// <param name="data">The potential interaction of something selecting a <see cref="DestinationLocation"/>.</param>
         [RequiresBehaviourState]
-        public void Select(SurfaceData data)
+        public void Select(UnityEngine.XR.WSA.SurfaceData data)
         {
             if (SelectedLocation != null && data != null)
             {
@@ -74,7 +74,7 @@
         /// </summary>
         /// <param name="data">The data to check.</param>
         /// <returns>The found <see cref="DestinationLocation"/>.</returns>
-        protected virtual DestinationLocation GetLocation(SurfaceData data)
+        protected virtual DestinationLocation GetLocation(UnityEngine.XR.WSA.SurfaceData data)
         {
             if (data == null || data.CollisionData.transform == null)
             {

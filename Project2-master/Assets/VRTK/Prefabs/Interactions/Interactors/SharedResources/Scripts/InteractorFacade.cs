@@ -120,7 +120,7 @@
         /// Attempt to attach an <see cref="InteractableFacade"/> found in the given <see cref="SurfaceData"/> to this <see cref="InteractorFacade"/>.
         /// </summary>
         /// <param name="data">The collision data containing a valid Interactable.</param>
-        public virtual void Grab(SurfaceData data)
+        public virtual void Grab(UnityEngine.XR.WSA.SurfaceData data)
         {
             if (data == null || data.CollisionData.transform == null)
             {

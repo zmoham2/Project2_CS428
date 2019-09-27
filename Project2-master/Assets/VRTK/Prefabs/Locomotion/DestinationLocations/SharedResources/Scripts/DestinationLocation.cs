@@ -21,7 +21,7 @@
         /// Defines the event with the specified <see cref="SurfaceData"/>.
         /// </summary>
         [Serializable]
-        public class SurfaceDataUnityEvent : UnityEvent<SurfaceData> { }
+        public class SurfaceDataUnityEvent : UnityEvent<UnityEngine.XR.WSA.SurfaceData> { }
         /// <summary>
         /// Defines the event with the specified <see cref="TransformData"/>.
         /// </summary>
@@ -106,7 +106,7 @@
         /// <summary>
         /// A collection of <see cref="SurfaceData"/> elements that are currently hovering over the Destination Location.
         /// </summary>
-        public List<SurfaceData> HoveringElements { get; protected set; } = new List<SurfaceData>();
+        public List<UnityEngine.XR.WSA.SurfaceData> HoveringElements { get; protected set; } = new List<UnityEngine.XR.WSA.SurfaceData>();
 
         /// <summary>
         /// The payload to emit when the Destination Location is selected.
@@ -122,7 +122,7 @@
         /// </summary>
         /// <param name="data">The data that is entering the location.</param>
         [RequiresBehaviourState]
-        public virtual void Enter(SurfaceData data)
+        public virtual void Enter(UnityEngine.XR.WSA.SurfaceData data)
         {
             if (data.Transform == null || !SourceValidity.Accepts(data.Transform))
             {
@@ -143,7 +143,7 @@
         /// </summary>
         /// <param name="data">The data that is exiting the location.</param>
         [RequiresBehaviourState]
-        public virtual void Exit(SurfaceData data)
+        public virtual void Exit(UnityEngine.XR.WSA.SurfaceData data)
         {
             if (data.Transform == null || !SourceValidity.Accepts(data.Transform) || !HoveringElements.Contains(data))
             {
@@ -164,7 +164,7 @@
         /// </summary>
         /// <param name="data">The data that is selecting the location.</param>
         [RequiresBehaviourState]
-        public virtual void Select(SurfaceData data)
+        public virtual void Select(UnityEngine.XR.WSA.SurfaceData data)
         {
             if (data.Transform == null || !SourceValidity.Accepts(data.Transform) || !HoveringElements.Contains(data))
             {
@@ -179,7 +179,7 @@
                 return;
             }
 
-            foreach (SurfaceData element in HoveringElements.ToArray())
+            foreach (UnityEngine.XR.WSA.SurfaceData element in HoveringElements.ToArray())
             {
                 Exit(element);
             }
@@ -201,7 +201,7 @@
         /// </summary>
         /// <param name="data">The data that is mutating the hover state.</param>
         /// <returns>The data to emit.</returns>
-        protected virtual SurfaceData CreateHoverPayload(SurfaceData data)
+        protected virtual UnityEngine.XR.WSA.SurfaceData CreateHoverPayload(UnityEngine.XR.WSA.SurfaceData data)
         {
             if (Origin == null || !Origin.activeInHierarchy)
             {
@@ -219,7 +219,7 @@
         /// </summary>
         /// <param name="data">The default data to potentially mutate.</param>
         /// <returns>The data to emit.</returns>
-        protected virtual TransformData CreateSelectedPayload(SurfaceData data)
+        protected virtual TransformData CreateSelectedPayload(UnityEngine.XR.WSA.SurfaceData data)
         {
             if (Destination == null || !Destination.activeInHierarchy)
             {

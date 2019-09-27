@@ -39,7 +39,7 @@
         /// </summary>
         /// <param name="data">The <see cref="SurfaceData"/> payload data to extract from.</param>
         /// <returns>The <see cref="Source"/> <see cref="GameObject"/> within the <see cref="SurfaceData"/>.</returns>
-        public virtual GameObject Extract(SurfaceData data)
+        public virtual GameObject Extract(UnityEngine.XR.WSA.SurfaceData data)
         {
             SetSource(data);
             return Extract();
@@ -49,7 +49,7 @@
         /// Extracts the <see cref="Source"/> <see cref="GameObject"/> from the given <see cref="SurfaceData"/> payload data.
         /// </summary>
         /// <param name="data">The <see cref="SurfaceData"/> payload data to extract from.</param>
-        public virtual void DoExtract(SurfaceData data)
+        public virtual void DoExtract(UnityEngine.XR.WSA.SurfaceData data)
         {
             Extract(data);
         }
@@ -61,7 +61,7 @@
         /// <returns>The <see cref="Source"/> <see cref="GameObject"/> within the <see cref="ObjectPointer.EventData"/>.</returns>
         public virtual GameObject Extract(ObjectPointer.EventData data)
         {
-            return Extract((SurfaceData)data);
+            return Extract((UnityEngine.XR.WSA.SurfaceData)data);
         }
 
         /// <summary>
@@ -78,7 +78,7 @@
         /// </summary>
         /// <param name="source">The data that contains the source transform.</param>
         [RequiresBehaviourState]
-        public virtual void SetSource(SurfaceData source)
+        public virtual void SetSource(UnityEngine.XR.WSA.SurfaceData source)
         {
             if (source == null || source.Transform == null)
             {
@@ -94,7 +94,7 @@
         /// <param name="source">The data that contains the source transform.</param>
         public virtual void SetSource(ObjectPointer.EventData source)
         {
-            SetSource((SurfaceData)source);
+            SetSource((UnityEngine.XR.WSA.SurfaceData)source);
         }
     }
 }

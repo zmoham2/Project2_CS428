@@ -69,7 +69,7 @@
         /// <summary>
         /// Emits the Entered event.
         /// </summary>
-        public virtual void EmitEntered(SurfaceData data)
+        public virtual void EmitEntered(UnityEngine.XR.WSA.SurfaceData data)
         {
             Facade.Entered?.Invoke(data);
         }
@@ -77,7 +77,7 @@
         /// <summary>
         /// Emits the Exited event.
         /// </summary>
-        public virtual void EmitExited(SurfaceData data)
+        public virtual void EmitExited(UnityEngine.XR.WSA.SurfaceData data)
         {
             Facade.Exited?.Invoke(data);
         }
