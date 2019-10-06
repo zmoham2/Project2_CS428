@@ -5,17 +5,18 @@ using UnityEngine;
 public class onoffswitch : MonoBehaviour
 {
     public GameObject myobject, object2;
+    public int counter;
+
     // Start is called before the first frame update
     void Start()
     {
-        RunLight();
+        counter = 0;
     }
 
     // Update is called once per frame
-    void RunLight()
+    void Update()
     {
-        while (true)
-        {
+        
             if (myobject.activeSelf == true && object2.activeSelf == true)
             {
                 myobject.SetActive(false);
@@ -26,11 +27,10 @@ public class onoffswitch : MonoBehaviour
                 myobject.SetActive(true);
                 object2.SetActive(true);
             }
-        }
+        
 
     }
-    void Update()
-    {
-       
-    }
+
+    
+    
 }
