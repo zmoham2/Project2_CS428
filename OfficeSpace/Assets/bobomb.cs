@@ -8,7 +8,7 @@ public class bobomb : MonoBehaviour
     float countdown;
     static bool hasExploded = false;
     public float radius = 5f;
-    public float force = 700f
+    public float force = 700f;
     public GameObject explosionEffect;
     public GameObject soundEffect;
     public GameObject fuseEffect;
