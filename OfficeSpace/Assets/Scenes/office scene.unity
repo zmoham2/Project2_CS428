@@ -10590,48 +10590,6 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 1303444683}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &445512678
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 445512677}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 14da97d13e74468592c215d698d0850f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  emittedTypes: -1
-  statesToProcess: -1
-  forwardingSourceValidity:
-    field: {fileID: 0}
-  CollisionStarted:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1435749684}
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
-    m_TypeName: Zinnia.Tracking.Collision.CollisionNotifier+UnityEvent, Zinnia.Runtime,
-      Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-  CollisionChanged:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: Zinnia.Tracking.Collision.CollisionNotifier+UnityEvent, Zinnia.Runtime,
-      Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-  CollisionStopped:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: Zinnia.Tracking.Collision.CollisionNotifier+UnityEvent, Zinnia.Runtime,
-      Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
 --- !u!65 &445512679
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -10645,12 +10603,31 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.5, y: 0.9, z: 0.073587425}
   m_Center: {x: 0, y: 2.9831627e-17, z: -0.016793713}
+--- !u!1 &446988952 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7915416951780248044, guid: 240fdd985e025cb459f73d2b1bb7b341,
+    type: 3}
+  m_PrefabInstance: {fileID: 2045717260}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &446988953 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2597149656536317179, guid: 240fdd985e025cb459f73d2b1bb7b341,
     type: 3}
   m_PrefabInstance: {fileID: 2045717260}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &446988957
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 446988952}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd523e18b4c5d425fb04a6a447b0fa30, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tv_toggle: {fileID: 1435749684}
 --- !u!1001 &458612436
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -21607,6 +21584,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 69df4eb131105422fb824d9b29dbd0a4,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.6799
+      objectReference: {fileID: 0}
     - target: {fileID: -1504981713932161579, guid: 69df4eb131105422fb824d9b29dbd0a4,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -22831,7 +22813,7 @@ GameObject:
   - component: {fileID: 1435749687}
   - component: {fileID: 1435749686}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: tvPlane
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -22881,9 +22863,9 @@ VideoPlayer:
   m_DirectAudioMutes: 01
   m_ControlledAudioTrackCount: 1
   m_PlayOnAwake: 1
-  m_SkipOnDrop: 1
+  m_SkipOnDrop: 0
   m_Looping: 0
-  m_WaitForFirstFrame: 1
+  m_WaitForFirstFrame: 0
   m_FrameReadyEventEnabled: 0
 --- !u!64 &1435749687
 MeshCollider:
@@ -29741,6 +29723,36 @@ PrefabInstance:
         type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5601440232934036508, guid: 240fdd985e025cb459f73d2b1bb7b341,
+        type: 3}
+      propertyPath: CollisionStarted.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5601440232934036508, guid: 240fdd985e025cb459f73d2b1bb7b341,
+        type: 3}
+      propertyPath: CollisionStarted.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5601440232934036508, guid: 240fdd985e025cb459f73d2b1bb7b341,
+        type: 3}
+      propertyPath: CollisionStarted.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5601440232934036508, guid: 240fdd985e025cb459f73d2b1bb7b341,
+        type: 3}
+      propertyPath: CollisionStarted.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 446988957}
+    - target: {fileID: 5601440232934036508, guid: 240fdd985e025cb459f73d2b1bb7b341,
+        type: 3}
+      propertyPath: CollisionStarted.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: tvOnOff
+      objectReference: {fileID: 0}
+    - target: {fileID: 5601440232934036508, guid: 240fdd985e025cb459f73d2b1bb7b341,
+        type: 3}
+      propertyPath: CollisionStarted.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 240fdd985e025cb459f73d2b1bb7b341, type: 3}
