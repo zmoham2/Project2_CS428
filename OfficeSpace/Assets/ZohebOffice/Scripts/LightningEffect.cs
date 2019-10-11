@@ -5,10 +5,13 @@ using UnityEngine;
 public class LightningEffect : MonoBehaviour
 {
     public GameObject myobject;
+   
+
 
     // Start is called before the first frame update
     void Start()
     {
+        
         StartCoroutine(lightitup());
     }
 
@@ -29,7 +32,7 @@ public class LightningEffect : MonoBehaviour
         myobject.SetActive(true);
         yield return new WaitForSeconds(1 / 2);
         myobject.SetActive(false);
-
+        
 
     }
 }
