@@ -1,0 +1,145 @@
+**** 428 code sources
+
+Bouncy bobomb
+How to create bouncing balls in Unity3D step by step
+by: NIKOLA BREŽNJAK
+http://www.nikola-breznjak.com/blog/codeproject/bouncing-ball-in-unity3d/
+
+all documentation
+VRTK Academy
+https://academy.vrtk.io/Documentation/HowToGuides/Interactions/AddingAnInteractor/
+
+All help
+VRTK 4 videos
+https://www.youtube.com/channel/UCWRk-LEMUNoZxUmY1wO7DBQ/videos
+
+Touch
+script for active in hierarchy
+stackoverflow
+https://answers.unity.com/questions/1286555/checking-a-gameobject-active-in-hierarchy-not-work.html
+unity docs
+https://docs.unity3d.com/ScriptReference/GameObject-activeInHierarchy.html
+
+
+
+
+
+*** MODELS
+
+Office Chair
+j.a.m
+https://sketchfab.com/3d-models/office-chair-41973aa1808d4a13b84c24497fc77c63
+
+coffee mug
+Michael Ybarra
+Blender
+
+MegaMan
+Michael Ybarra
+Blender
+
+Mario
+Michael Ybarra
+Blender
+
+Bobomb
+Michael Ybarra
+Blender
+
+
+
+yoshi 
+TheShibeLord
+https://sketchfab.com/3d-models/3ds-nintendogs-cats-yoshi-kart-c0e9c9d4d85b497fb78062720467eac2
+
+Mario Hat
+marvelmaster
+https://sketchfab.com/3d-models/super-mario-odyssey-hat-bb6687a4a25c435682faea7094227f7e
+
+
+
+Radio 1
+tomasl
+https://sketchfab.com/3d-models/radio-cassette-corder-286225d931b5492ca864a6851b85d160
+Album name: Legend of Zelda, The - Ocarina of Time Original Soundtrack
+Song name: Gerudo Valley
+https://downloads.khinsider.com/game-soundtracks/album/legend-of-zelda-ocarina-of-time-original-sound-track/68%2520-%2520Gerudo%2520Valley.mp3
+
+Star
+Anthony Yanez
+https://sketchfab.com/3d-models/super-star-super-mario-bros-c677ff45d94644be9dcf3550e513be30
+Album name: Super Mario Bros. 3
+Song name: Invincible Starman
+https://downloads.khinsider.com/game-soundtracks/album/super-mario-bros.-3
+
+Pumpkin
+Anthony Yanez
+https://sketchfab.com/3d-models/jack-o-lantern-33e97db8345f4c149a9f4f4044dfbfd4
+Album name: Donkey Kong 64 - Game Music
+Song name: Creepy Castle Ballroom.mp3
+https://downloads.khinsider.com/game-soundtracks/album/donkey-kong-64-game-music/Creepy%2520Castle%2520Ballroom.mp3
+
+
+monitor
+opusminus
+https://sketchfab.com/3d-models/
+dell-22-monitor-download-obj-b546cd0dddb241b8847bd8bc9287c4c5
+
+multi meter
+vfrckkkf
+https://sketchfab.com/3d-models/digital-storage-oscilloscope-akip-41251-46f8af436d894a44bc9617c663666bed
+
+Screwdriver with bits
+Justin
+https://sketchfab.com/3d-models/screwdriver-with-bit-set-f2b438fb6f6649539c1f75430c288066
+
+bag
+costorella
+https://sketchfab.com/3d-models/3dx-bag-002a460caafa49199dd46eff2595bc21
+
+Book
+svickers
+https://sketchfab.com/3d-models/book04-partially-complete-model-from-remake-5731a49b478242d5b75289f0b7b1e3e3
+
+Uno
+crimsonfalcon
+https://sketchfab.com/3d-models/arduino-uno-board-f31feafc5e9743abbdf33c54f9d92669
+
+Pliers
+Francesco Coldesina
+https://sketchfab.com/3d-models/pliers-0b48731d05aa4497bc5605769b2f5d24
+
+TV
+Théo Richard
+https://sketchfab.com/3d-models/tv-screen-2ecf44715572498db41acb4bf3227550
+SNES Super Ghouls and Goblins
+Screen Recoding
+
+chest
+TheCaitasaurus
+https://sketchfab.com/3d-models/printable-treasure-chest-08e75b1f6ce5437c8af5173f541c64a2
+Album name: Legend of Zelda, The - Ocarina of Time Original Soundtrack
+Song name: Great Fairy's Fountain
+https://downloads.khinsider.com/game-soundtracks/album/legend-of-zelda-ocarina-of-time-original-sound-track/40%2520-%2520Great%2520Fairy%2527s%2520Fountain.mp3
+
+Laptop
+JustTomas
+https://sketchfab.com/3d-models/asus-n750jv-3ad34e05831e4826b2cee9d4bdb6082f
+1-UP
+Album name: Super Mario Bros
+Song name: 1-Up
+https://downloads.khinsider.com/game-soundtracks/album/super-mario-bros/14%2520-%25201-Up.mp3
+
+
+
+
+
+
+
+
+
+
+
+
+
+

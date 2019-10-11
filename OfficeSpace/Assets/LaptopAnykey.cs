@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class LaptopAnykey : MonoBehaviour
 {
+
+    public GameObject awake;
     public GameObject laptop_toggle;
     public GameObject monitor_toggle;
     public AudioSource powerUpSong;
@@ -28,6 +30,7 @@ public class LaptopAnykey : MonoBehaviour
         {
             laptop_toggle.SetActive(true);
             monitor_toggle.SetActive(true);
+            awake.SetActive(true);
             powerUpSong.Play();
 
         }
@@ -36,6 +39,7 @@ public class LaptopAnykey : MonoBehaviour
         {
             laptop_toggle.SetActive(false);
             monitor_toggle.SetActive(false);
+            awake.SetActive(false);
             powerUpSong.Stop();
         }
 
