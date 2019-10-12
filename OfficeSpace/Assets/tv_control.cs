@@ -4,12 +4,6 @@
  *      When you touch the TV it will toggle the display
  *  from on and to off.
  *
- *  Update:
- *      This this the newest way to use touch. Have been
- *  making intactable using the collider notifier and freezing
- *  the model. this new way is much simplier.
- *
- *
  * 
  *  Code Source:
  *
