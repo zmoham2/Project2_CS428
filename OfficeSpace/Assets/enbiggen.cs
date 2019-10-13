@@ -24,7 +24,7 @@ public class enbiggen : MonoBehaviour
             //update the position
             transform.localScale += new Vector3(x, y, z);
             // Widen the object by x, y, and z values
-            transform.position = transform.position + new Vector3(horizontalInput, verticalInput, 0);
+            transform.position += transform.position + new Vector3(4f*horizontalInput, 4f*verticalInput, 0);
 
             counter++;
         }
