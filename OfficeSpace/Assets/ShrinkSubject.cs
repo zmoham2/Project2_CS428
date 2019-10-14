@@ -5,7 +5,7 @@ using UnityEngine;
 public class ShrinkSubject : MonoBehaviour
 {
     public GameObject ToSize;
-    public GameObject Shrink, Enlarge, Normalize;
+    public GameObject Shrink, Enlarge, Normalize, Ceiling;
     int counter = 0;
 
     // Start is called before the first frame update
@@ -35,6 +35,7 @@ public class ShrinkSubject : MonoBehaviour
         Shrink.SetActive(false);
         Normalize.SetActive(true);
         Enlarge.SetActive(true);
+        Ceiling.SetActive(true);
 
 
     }
@@ -52,6 +53,7 @@ public class ShrinkSubject : MonoBehaviour
         Shrink.SetActive(true);
         Normalize.SetActive(true);
         Enlarge.SetActive(false);
+        Ceiling.SetActive(false);
 
 
     }
@@ -69,6 +71,7 @@ public class ShrinkSubject : MonoBehaviour
         Shrink.SetActive(true);
         Normalize.SetActive(false);
         Enlarge.SetActive(true);
+        Ceiling.SetActive(true);
 
     }
 }
