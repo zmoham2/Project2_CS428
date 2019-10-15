@@ -7,7 +7,7 @@ public class ShrinkSubject : MonoBehaviour
     public GameObject ToSize;
     public GameObject Shrink, Enlarge, Normalize, Ceiling;
 
-    int counter = 0;
+    //int counter = 0;
 
     // Start is called before the first frame update
     void Start()
@@ -19,7 +19,7 @@ public class ShrinkSubject : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.T))
+       /* if (Input.GetKeyDown(KeyCode.T))
         {
             ScaleDown();
         }
@@ -40,14 +40,14 @@ public class ShrinkSubject : MonoBehaviour
         if (Input.GetKey(KeyCode.JoystickButton17))
         {
             ScaleDown();
-        }
+        }*/
 
     }
 
     public void ScaleDown()
     {
 
-        if (Enlarge.activeSelf == false)
+        /*if (Enlarge.activeSelf == false)
         {
             //get the Input from Horizontal axis
             float horizontalInput = Input.GetAxis("Horizontal");
@@ -61,7 +61,7 @@ public class ShrinkSubject : MonoBehaviour
 
         }
         else if (Enlarge.activeSelf == true)
-        {
+        {*/
             //get the Input from Horizontal axis
             float horizontalInput = Input.GetAxis("Horizontal");
             //get the Input from Vertical axis
@@ -70,8 +70,8 @@ public class ShrinkSubject : MonoBehaviour
             ToSize.transform.localScale -= new Vector3(0.7f, 0.7f, 0.7f);
             // Widen the object by x, y, and z values
             ToSize.transform.position = ToSize.transform.position + new Vector3(horizontalInput, verticalInput, 0);
-            Debug.Log("We came from normal state");
-        }
+            //Debug.Log("We came from normal state");
+        //}
 
         Shrink.SetActive(false);
         Normalize.SetActive(true);
@@ -80,7 +80,7 @@ public class ShrinkSubject : MonoBehaviour
 
 
     }
-    public void ScaleBig()
+    /*public void ScaleBig()
     {
 
 
@@ -116,7 +116,8 @@ public class ShrinkSubject : MonoBehaviour
         Ceiling.SetActive(false);
 
 
-    }
+    }*/
+
     public void ScaleNormal()
     {
         //get the Input from Horizontal axis
