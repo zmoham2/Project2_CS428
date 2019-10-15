@@ -18,7 +18,20 @@ public class ShrinkSubject : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (Input.GetKeyDown(KeyCode.T))
+        {
+            ScaleDown();
+        }
+
+        if (Input.GetKeyDown(KeyCode.N))
+        {
+            ScaleNormal();
+        }
+
+        if (Input.GetKeyDown(KeyCode.B))
+        {
+            ScaleBig();
+        }
     }
 
     public void ScaleDown()
@@ -29,7 +42,7 @@ public class ShrinkSubject : MonoBehaviour
         float verticalInput = Input.GetAxis("Vertical");
 
             //update the position
-            ToSize.transform.localScale -= new Vector3(0.7f, .7f, 0.7f);
+            ToSize.transform.localScale -= new Vector3(0.6f, .6f, 0.6f);
             // Widen the object by x, y, and z values
             ToSize.transform.position = ToSize.transform.position + new Vector3(horizontalInput, verticalInput, 0);
         Shrink.SetActive(false);
