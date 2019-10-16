@@ -6,12 +6,14 @@ public class ShrinkSubject : MonoBehaviour
 {
     public GameObject ToSize;
     public GameObject Shrink, Normalize, PositionTest;
+    
 
 
     // Start is called before the first frame update
     void Start()
     {
-
+        float initialHorizontal = Input.GetAxis("Horizontal");
+        float initialVertical = Input.GetAxis("Vertical");
 
     }
 
@@ -86,19 +88,21 @@ public class ShrinkSubject : MonoBehaviour
         float horizontalInput = Input.GetAxis("Horizontal");
         //get the Input from Vertical axis
         float verticalInput = Input.GetAxis("Vertical");
-        Debug.Log("Old: " + horizontalInput);
-        Debug.Log("Old: " + verticalInput);
+        //Debug.Log("Old: " + horizontalInput);
+        //Debug.Log("Old: " + verticalInput);
 
         //update the position
-       
-        ToSize.transform.position = ToSize.transform.position - new Vector3(horizontalInput, verticalInput, 0);
+
+        //ToSize.transform.position = ToSize.transform.position - new Vector3(horizontalInput, verticalInput, 0);
+        
         ToSize.transform.localScale = new Vector3(1f, 1f, 1f);
+        ///ToSize.transform.position = new Vector3(horizontalInput, verticalInput, 0);
 
-        horizontalInput = Input.GetAxis("Horizontal");
-        verticalInput = Input.GetAxis("Vertical");
+        //horizontalInput = Input.GetAxis("Horizontal");
+        //verticalInput = Input.GetAxis("Vertical");
 
-        Debug.Log("New: " + horizontalInput);
-        Debug.Log("New: " + verticalInput);
+        //Debug.Log("New: " + horizontalInput);
+        //Debug.Log("New: " + verticalInput);
 
         //ToSize.transform.position = PositionTest.transform.position;
         // Widen the object by x, y, and z values
