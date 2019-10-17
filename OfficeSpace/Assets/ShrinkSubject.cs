@@ -12,11 +12,11 @@ public class ShrinkSubject : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        float initialHorizontal = Input.GetAxis("Horizontal");
-        float initialVertical = Input.GetAxis("Vertical");
+        //float initialHorizontal = Input.GetAxis("Horizontal");
+        //float initialVertical = Input.GetAxis("Vertical");
 
       //  mModels = GameObject.Find("scaled");
-        mModels.SetActive(false);
+        //mModels.SetActive(false);
     }
 
     // Update is called once per frame
@@ -44,11 +44,8 @@ public class ShrinkSubject : MonoBehaviour
 
             ToSize.transform.position = PositionTest.transform.position;
             //update the position
-            ToSize.transform.localScale -= new Vector3(0.75f, 0.75f, 0.75f);
-            // Widen the object by x, y, and z values
-            //ToSize.transform.position = ToSize.transform.position + new Vector3(horizontalInput, verticalInput, 0);
-            //Debug.Log("We came from normal state");
-        //}
+            ToSize.transform.localScale -= new Vector3(0.7f, 0.7f, 0.7f);
+            
 
         Shrink.SetActive(false);
         Normalize.SetActive(true);
