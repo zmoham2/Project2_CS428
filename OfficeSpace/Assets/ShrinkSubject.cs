@@ -6,8 +6,8 @@ public class ShrinkSubject : MonoBehaviour
 {
     public GameObject ToSize;
     public GameObject Shrink, Normalize, PositionTest;
-    
 
+    public GameObject mModels;
 
     // Start is called before the first frame update
     void Start()
@@ -15,6 +15,8 @@ public class ShrinkSubject : MonoBehaviour
         float initialHorizontal = Input.GetAxis("Horizontal");
         float initialVertical = Input.GetAxis("Vertical");
 
+      //  mModels = GameObject.Find("scaled");
+        mModels.SetActive(false);
     }
 
     // Update is called once per frame
@@ -33,6 +35,7 @@ public class ShrinkSubject : MonoBehaviour
 
     public void ScaleDown()
     {
+
         
             //get the Input from Horizontal axis
             float horizontalInput = Input.GetAxis("Horizontal");
@@ -49,7 +52,9 @@ public class ShrinkSubject : MonoBehaviour
 
         Shrink.SetActive(false);
         Normalize.SetActive(true);
-   
+        mModels.SetActive(true);
+
+
     }
     /*public void ScaleBig()
     {
@@ -91,6 +96,7 @@ public class ShrinkSubject : MonoBehaviour
 
     public void ScaleNormal()
     {
+
         //get the Input from Horizontal axis
         float horizontalInput = Input.GetAxis("Horizontal");
         //get the Input from Vertical axis
@@ -116,6 +122,7 @@ public class ShrinkSubject : MonoBehaviour
         //ToSize.transform.position = ToSize.transform.position + new Vector3(horizontalInput, verticalInput, 0);
         Shrink.SetActive(true);
         Normalize.SetActive(false);
+        mModels.SetActive(false);
 
     }
 }
