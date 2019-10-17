@@ -13,7 +13,7 @@ public class keyscript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.Rotate(0, 30 * (Time.deltaTime), 0  ); //rotates 45 degrees per second around z axis
+        transform.Rotate(0, 30 * (Time.deltaTime), 0  ); 
 
     }
 }
